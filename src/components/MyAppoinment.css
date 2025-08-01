@@ -1,0 +1,205 @@
+.myapp-fullscreen {
+  min-height: 100vh;
+  background: #f9fafb;
+  padding: 2rem 0;
+}
+.myapp-container {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.myapp-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+.myapp-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.myapp-btn {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  border: none;
+}
+.myapp-btn-primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+}
+.myapp-btn-primary:hover {
+  background: #1d4ed8;
+}
+.myapp-btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.myapp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.myapp-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.myapp-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+.myapp-card-body {
+  padding: 1.5rem;
+}
+.myapp-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.myapp-card-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.myapp-status-icon {
+  background: #dbeafe;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myapp-status-check {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #2563eb;
+}
+.myapp-doctor-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+.myapp-doctor-spec {
+  color: #2563eb;
+  font-weight: 500;
+}
+.myapp-status-label {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  margin-top: 0.25rem;
+}
+.myapp-cancel-btn {
+  color: #ef4444;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: color 0.2s, background 0.2s;
+  cursor: pointer;
+}
+.myapp-cancel-btn:hover {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+.myapp-cancel-icon {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+.myapp-details-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .myapp-details-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.myapp-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.myapp-details-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+.myapp-detail-row {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  font-size: 1rem;
+}
+.myapp-detail-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.75rem;
+}
+.myapp-detail-box {
+  background: #f3f4f6;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+.myapp-detail-box-text {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+.myapp-detail-box-blue {
+  background: #dbeafe;
+}
+.myapp-detail-box-text-blue {
+  font-size: 0.95rem;
+  color: #1e40af;
+}
+.myapp-booked-row {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+.myapp-booked-text {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+.myapp-empty-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  max-width: 28rem;
+  margin: 0 auto;
+}
+.myapp-empty-icon {
+  height: 4rem;
+  width: 4rem;
+  color: #d1d5db;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+.myapp-empty-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+.myapp-empty-desc {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
