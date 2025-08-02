@@ -70,6 +70,74 @@ export const doctorsData = [
     isAvailable: true,
   },
   {
+    id: 4,
+    name: "Dr. James Wilson",
+    specialization: "Orthopedics",
+    rating: 4.7,
+    experience: 20,
+    location: "Orthopedic Specialists Group",
+    image:
+      "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400",
+    about:
+      "Dr. James Wilson is an experienced orthopedic surgeon specializing in joint replacement and sports medicine. He has performed over 2000 successful surgeries.",
+    education:
+      "MD from University of Pennsylvania, Orthopedic Surgery Residency at Mayo Clinic",
+    availability: [
+      { day: "Monday", slots: ["13:00", "14:00", "15:00", "16:00"] },
+      { day: "Tuesday", slots: ["13:00", "14:00", "15:00"] },
+      { day: "Wednesday", slots: ["13:00", "14:00", "15:00", "16:00"] },
+      { day: "Thursday", slots: ["13:00", "14:00", "15:00"] },
+      { day: "Friday", slots: ["13:00", "14:00"] },
+    ],
+    consultationFee: 250,
+    isAvailable: true,
+  },
+  {
+    id: 5,
+    name: "Dr. Lisa Thompson",
+    specialization: "Gynecology",
+    rating: 4.8,
+    experience: 14,
+    location: "Women's Health Center",
+    image:
+      "https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=400",
+    about:
+      "Dr. Lisa Thompson is a board-certified gynecologist dedicated to women's health. She provides comprehensive care including preventive services and minimally invasive procedures.",
+    education: "MD from Northwestern University, OB/GYN Residency at UCLA",
+    availability: [
+      { day: "Monday", slots: ["09:00", "10:00", "14:00", "15:00"] },
+      { day: "Tuesday", slots: ["09:00", "10:00", "11:00", "14:00", "15:00"] },
+      { day: "Wednesday", slots: ["09:00", "10:00", "11:00"] },
+      { day: "Thursday", slots: ["14:00", "15:00", "16:00"] },
+      { day: "Friday", slots: ["09:00", "10:00", "14:00"] },
+    ],
+    consultationFee: 180,
+    isAvailable: false,
+  },
+  {
+    id: 6,
+    name: "Dr. Robert Kim",
+    specialization: "Neurology",
+    rating: 4.9,
+    experience: 16,
+    location: "Brain & Spine Institute",
+    image:
+      "https://images.pexels.com/photos/5452274/pexels-photo-5452274.jpeg?auto=compress&cs=tinysrgb&w=400",
+    about:
+      "Dr. Robert Kim is a neurologist specializing in the diagnosis and treatment of disorders of the nervous system. He has expertise in stroke care and neurological disorders.",
+    education:
+      "MD from Johns Hopkins, Neurology Residency at Massachusetts General Hospital",
+    availability: [
+      { day: "Monday", slots: ["10:00", "11:00", "15:00", "16:00"] },
+      { day: "Tuesday", slots: ["10:00", "11:00", "15:00"] },
+      { day: "Wednesday", slots: ["10:00", "11:00", "15:00", "16:00"] },
+      { day: "Thursday", slots: ["10:00", "11:00", "15:00"] },
+      { day: "Friday", slots: ["10:00", "11:00"] },
+    ],
+    consultationFee: 220,
+    isAvailable: true,
+  },
+  {
     id: 7,
     name: "Dr. Priya Patel",
     specialization: "Endocrinology",
@@ -139,7 +207,7 @@ export const doctorsData = [
     experience: 9,
     location: "Mind Wellness Clinic",
     image:
-      "https://images.pexels.com/photos/846015/pexels-photo-846015.jpeg?auto=compress&cs=tinysrgb&w=400",
+      "https://images.pexels.com/photos/8376293/pexels-photo-8376293.jpeg?auto=compress&cs=tinysrgb&w=400",
     about:
       "Dr. Samuel Green helps patients manage mental health conditions with empathy and evidence-based therapies.",
     education: "MD from Columbia University, Psychiatry Residency at NYU",
@@ -148,74 +216,6 @@ export const doctorsData = [
       { day: "Thursday", slots: ["14:00", "15:00"] },
     ],
     consultationFee: 140,
-    isAvailable: true,
-  },
-  {
-    id: 4,
-    name: "Dr. James Wilson",
-    specialization: "Orthopedics",
-    rating: 4.7,
-    experience: 20,
-    location: "Orthopedic Specialists Group",
-    image:
-      "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=400",
-    about:
-      "Dr. James Wilson is an experienced orthopedic surgeon specializing in joint replacement and sports medicine. He has performed over 2000 successful surgeries.",
-    education:
-      "MD from University of Pennsylvania, Orthopedic Surgery Residency at Mayo Clinic",
-    availability: [
-      { day: "Monday", slots: ["13:00", "14:00", "15:00", "16:00"] },
-      { day: "Tuesday", slots: ["13:00", "14:00", "15:00"] },
-      { day: "Wednesday", slots: ["13:00", "14:00", "15:00", "16:00"] },
-      { day: "Thursday", slots: ["13:00", "14:00", "15:00"] },
-      { day: "Friday", slots: ["13:00", "14:00"] },
-    ],
-    consultationFee: 250,
-    isAvailable: true,
-  },
-  {
-    id: 5,
-    name: "Dr. Lisa Thompson",
-    specialization: "Gynecology",
-    rating: 4.8,
-    experience: 14,
-    location: "Women's Health Center",
-    image:
-      "https://images.pexels.com/photos/5452268/pexels-photo-5452268.jpeg?auto=compress&cs=tinysrgb&w=400",
-    about:
-      "Dr. Lisa Thompson is a board-certified gynecologist dedicated to women's health. She provides comprehensive care including preventive services and minimally invasive procedures.",
-    education: "MD from Northwestern University, OB/GYN Residency at UCLA",
-    availability: [
-      { day: "Monday", slots: ["09:00", "10:00", "14:00", "15:00"] },
-      { day: "Tuesday", slots: ["09:00", "10:00", "11:00", "14:00", "15:00"] },
-      { day: "Wednesday", slots: ["09:00", "10:00", "11:00"] },
-      { day: "Thursday", slots: ["14:00", "15:00", "16:00"] },
-      { day: "Friday", slots: ["09:00", "10:00", "14:00"] },
-    ],
-    consultationFee: 180,
-    isAvailable: false,
-  },
-  {
-    id: 6,
-    name: "Dr. Robert Kim",
-    specialization: "Neurology",
-    rating: 4.9,
-    experience: 16,
-    location: "Brain & Spine Institute",
-    image:
-      "https://images.pexels.com/photos/5452274/pexels-photo-5452274.jpeg?auto=compress&cs=tinysrgb&w=400",
-    about:
-      "Dr. Robert Kim is a neurologist specializing in the diagnosis and treatment of disorders of the nervous system. He has expertise in stroke care and neurological disorders.",
-    education:
-      "MD from Johns Hopkins, Neurology Residency at Massachusetts General Hospital",
-    availability: [
-      { day: "Monday", slots: ["10:00", "11:00", "15:00", "16:00"] },
-      { day: "Tuesday", slots: ["10:00", "11:00", "15:00"] },
-      { day: "Wednesday", slots: ["10:00", "11:00", "15:00", "16:00"] },
-      { day: "Thursday", slots: ["10:00", "11:00", "15:00"] },
-      { day: "Friday", slots: ["10:00", "11:00"] },
-    ],
-    consultationFee: 220,
     isAvailable: true,
   },
 ];
