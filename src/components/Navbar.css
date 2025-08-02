@@ -5,17 +5,18 @@
   top: 0;
   z-index: 50;
 }
+
 .navbar-container {
   max-width: 80rem;
   margin: 0 auto;
   padding: 0 1rem;
-}
-.navbar-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 4rem;
+  position: relative;
 }
+
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -26,22 +27,42 @@
   font-weight: bold;
   transition: color 0.2s;
 }
+
 .navbar-logo:hover {
   color: #1d4ed8;
 }
-.navbar-logo-icon {
-  height: 2rem;
-  width: 2rem;
-}
+
 .navbar-logo-text {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.navbar-toggle-bar {
+  width: 1.5rem;
+  height: 0.2rem;
+  background: #2563eb;
+  border-radius: 2px;
+  display: block;
+}
+
 .navbar-links {
   display: flex;
   gap: 2rem;
 }
-.navbar-link {
+
+.navbar-link,
+.navbar-link-active {
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -54,18 +75,54 @@
   background: none;
   transition: color 0.2s, background 0.2s;
 }
+
 .navbar-link:hover {
   color: #2563eb;
   background: #f3f4f6;
 }
+
 .navbar-link-active {
   color: #2563eb;
   background: #dbeafe;
 }
-.navbar-link-icon {
-  height: 1rem;
-  width: 1rem;
-}
-.navbar-link-text {
-  font-weight: 500;
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    display: none;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 0 0 8px 8px;
+    z-index: 100;
+  }
+
+  .navbar-links-open {
+    display: flex;
+  }
+
+  .navbar-link,
+  .navbar-link-active {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-radius: 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
 }
