@@ -8,7 +8,7 @@ import MyAppointments from './components/MyAppointments';
 import './index.css'; // Make sure your CSS is imported
 
 function App() {
-  return (
+  return ( 
     <AppProvider>
       <Router>
         <div className="app-fullscreen">

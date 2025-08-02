@@ -203,7 +203,7 @@ export const doctorsData = [
     id: 10,
     name: "Dr. Samuel Green",
     specialization: "Psychiatry",
-    rating: 4.6,
+    rating: 4.7,
     experience: 9,
     location: "Mind Wellness Clinic",
     image:
