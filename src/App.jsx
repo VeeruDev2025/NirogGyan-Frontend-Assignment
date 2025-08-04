@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./context/AppContext.jsx";
@@ -28,7 +27,8 @@ function App() {
 
   return (
     <AppProvider>
-      <Router>
+      {/* Added basename for GitHub Pages or subpath deployments */}
+      <Router basename="/NirogGyan-Frontend-Assignment">
         <div className="app-fullscreen">
           <Navbar />
           <Routes>
