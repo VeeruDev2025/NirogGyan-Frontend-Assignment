@@ -27,8 +27,7 @@ function App() {
 
   return (
     <AppProvider>
-      {/* Added basename for GitHub Pages or subpath deployments */}
-      <Router basename="/NirogGyan-Frontend-Assignment">
+      <Router>
         <div className="app-fullscreen">
           <Navbar />
           <Routes>
