@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AppProvider } from "./context/AppContext.jsx";
+import { Routes, Route } from "react-router-dom";
+import { AppProvider } from "./context/AppContext.jsx"; // Keep if you still want context
 import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import DoctorProfile from "./components/DoctorProfile.jsx";
@@ -27,17 +27,15 @@ function App() {
 
   return (
     <AppProvider>
-      <Router>
-        <div className="app-fullscreen">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/doctor/:id" element={<DoctorProfile />} />
-            <Route path="/book/:id" element={<BookingForm />} />
-            <Route path="/appointments" element={<MyAppointments />} />
-          </Routes>
-        </div>
-      </Router>
+      <div className="app-fullscreen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/doctor/:id" element={<DoctorProfile />} />
+          <Route path="/book/:id" element={<BookingForm />} />
+          <Route path="/appointments" element={<MyAppointments />} />
+        </Routes>
+      </div>
     </AppProvider>
   );
 }
